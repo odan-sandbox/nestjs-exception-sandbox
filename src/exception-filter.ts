@@ -13,7 +13,8 @@ export class CustomExceptionFilter implements ExceptionFilter<BaseError> {
       message: exception.message,
       type: exception.name,
       // 開発時のみ
-      trace: exception.stack
+      trace: exception.stack,
+      statusCode: 200
     });
   }
 }
