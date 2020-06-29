@@ -7,3 +7,5 @@ export class BaseError extends Error {
 }
 
 export class CustomError extends BaseError {}
+
+export class UnexpectedError extends BaseError {}
