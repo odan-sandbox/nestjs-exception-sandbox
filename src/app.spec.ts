@@ -34,13 +34,12 @@ describe("app", (): void => {
       response = await server;
     });
 
-    it("should be return 200 status code", () => {
-      expect(response.status).toBe(200);
+    it("should be return 400 status code", () => {
+      expect(response.status).toBe(400);
     });
 
     it("should be return custom body", () => {
       expect(response.body.message).toBeDefined();
-      expect(response.body.type).toBeDefined();
       expect(response.body.trace).toBeDefined();
       expect(response.body.statusCode).toBeDefined();
     });
